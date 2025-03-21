@@ -42,7 +42,9 @@ const Footer = () => {
       className="flex flex-col gap-4 px-6 py-12 items-stretch justify-center md:flex-row md:items-stretch md:justify-between bg-orange-100"
     >
       <div className=" md:flex-[40%]  ">
-        <img src={logo} alt="Logo" className="mb-6 logoImg" />
+        <Link to="/home">
+          <img src={logo} alt="Logo" className="mb-6 logoImg" />
+        </Link>
         <p className="text-base text-bodyColor font-pop w-[320px]">
           Taste the golden touch of freshly baked goodness, warm, delicious
           treats made with love.
