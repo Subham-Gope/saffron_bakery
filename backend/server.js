@@ -27,6 +27,11 @@ app.use(helmet());
 // Mounting the emailRouter with the /api path
 app.use("/api", emailRouter);
 
+// getting the initial request
+app.get("/", (req, res) => {
+  res.send("API Working");
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at ${PORT}`);
 });
